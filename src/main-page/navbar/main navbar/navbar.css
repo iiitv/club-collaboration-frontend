@@ -16,7 +16,44 @@ body{
     padding: 10px 15px 10px 12px;
     font-size: 20px;
 }
+.navbar-center-link a{
+    text-decoration: none;
+    color: rgb(2, 28, 58);
+}
+.current{
+    border-bottom: 2px solid #EDF5E1;
+    padding-bottom: 5px;
+}
 .slide-menu-icon{
     cursor: pointer;
-    padding-top: 5px;
+    /* padding-top: 5px; */
+}
+.three-dot{
+    display:none;
+}
+@media (max-width:640px){
+    .all-navbar{
+        display:flex;
+        justify-content: space-around;
+        /* justify-content: flex-start; */
+        /* display: inline-flex;
+        position: absolute; */
+    }
+    .logo{
+        margin-left: -40px;
+    }
+    .logo h1{
+        font-size: 19px;
+    }
+    .navbar-all-links{
+        width: 90%;
+        justify-content: space-between;
+    }
+    .three-dot{
+        display: inline;
+        padding: 15px;
+    }
+    .responsive-menu{
+        display: none;
+    }
 }

@@ -1,0 +1,40 @@
+.menu-2{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.bada-flex:after{
+    flex: 2;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(250, 240, 240, 0.7);
+}
+.chota-flex{
+    position: absolute;
+    background-color: white;
+    width: 25%;
+    height: 100%;
+    left: 75%;
+    top: 0;
+}
+.chota-flex ul{
+    list-style-type: none;
+    margin-top: 130px;
+    padding-left: 35px;
+}
+.menu-list{
+    margin: 15px;
+}
+.cross-img{
+    border: none;
+    background: transparent;
+    outline: none;
+    float: right;
+    padding: 30px;
+    cursor: pointer;
+}

@@ -26,7 +26,6 @@ body{
 }
 .slide-menu-icon{
     cursor: pointer;
-    /* padding-top: 5px; */
 }
 .three-dot{
     display:none;
@@ -35,9 +34,6 @@ body{
     .all-navbar{
         display:flex;
         justify-content: space-around;
-        /* justify-content: flex-start; */
-        /* display: inline-flex;
-        position: absolute; */
     }
     .logo{
         margin-left: -40px;
@@ -52,6 +48,7 @@ body{
     .three-dot{
         display: inline;
         padding: 15px;
+        padding-left: 0px;
     }
     .responsive-menu{
         display: none;

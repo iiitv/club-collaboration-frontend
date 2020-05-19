@@ -8,7 +8,7 @@ const clubsdata = {
         {id:6,image:'Images/clublogo/arcadia.jpg',club:'Arcadia'},
         {id:7,image:'Images/clublogo/obscura.jpeg',club:'Obscura'},
         {id:8,image:'Images/clublogo/literature.jpeg',club:'Literature'},
-        {id:8,image:'Images/clublogo/dot.jpeg',club:'Dot'}
+        {id:9,image:'Images/clublogo/dot.jpeg',club:'Dot'}
 
     ]
 }

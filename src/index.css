@@ -3,9 +3,6 @@
     padding: 0;
     font-family: "montserrat";
 }
-
 body{
-    background-image: url(bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #5cdb95;
 }

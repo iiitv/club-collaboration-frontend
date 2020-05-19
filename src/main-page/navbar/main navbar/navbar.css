@@ -29,6 +29,7 @@ body{
 }
 .three-dot{
     display:none;
+    
 }
 @media (max-width:640px){
     .all-navbar{
@@ -49,8 +50,29 @@ body{
         display: inline;
         padding: 15px;
         padding-left: 0px;
+        cursor: pointer;
+    }
+    .three-dot button{
+        background: transparent;
+        border: none;
+        outline: none;
     }
     .responsive-menu{
         display: none;
     }
+    .responsive-menu.center-link{
+        display: block;
+        position: absolute;
+        
+    }
+    .responsive-menu.center-link ul{
+        display: block;
+        margin-left: -85px;
+        background-color:white ;
+        margin-top: 43px;
+    }
+    .slide-menu-icon{
+        margin-right: -15px;
+    }
 }
+

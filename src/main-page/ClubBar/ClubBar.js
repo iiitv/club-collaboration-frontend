@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import './ClubBar.css'
+import {Link,NavLink} from 'react-router-dom'
 
 const Clubs = (props) => {
     let clubImages=[];
@@ -13,9 +14,14 @@ const Clubs = (props) => {
         <div className="club-area">
             <h2 className="clubs">Our Clubs</h2>
             <div className="club-bar"> 
-                {clubImages.map((index)=><div>
-                        <img  className='club-logo' src={index.image}></img>
-                </div>
+                {clubImages.map((index)=>
+                    <div  key={index.id}>
+                        <NavLink exact to={index.club}> 
+                            <abbr title={index.club}  tabIndex="0">
+                                <img  className='club-logo' src={index.image} alt={index.club}></img>
+                            </abbr>
+                        </NavLink>
+                    </div>
                 )}
             </div>
         </div>

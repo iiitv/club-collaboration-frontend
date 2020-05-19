@@ -55,11 +55,16 @@
         left: 50%;
     }
     .chota-flex ul{
-        margin-top: 60px;
+        margin-top: 50px;
         padding-left: 20px;
     }
     .cross-img{
         padding: 20px;
         padding-bottom: 0;
+    }
+}
+@media (max-height:400px){
+    .chota-flex ul{
+        margin-top: calc(3rem);
     }
 }

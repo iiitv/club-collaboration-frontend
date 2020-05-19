@@ -5,18 +5,30 @@ import menu from './menu.png'
 import dot from './3-dot.png'
 
 const Navbar = ()=>{
+
+    const  myFunction = ()=>{
+       var x = document.getElementById('center-link');
+       if(x.className === 'responsive-menu'){
+           x.className+=' center-link';
+           console.log(x.className)
+       }
+       else{
+           x.className = 'responsive-menu';
+       }
+    }
+
     return(
             <div className='all-navbar'>
                 <div className='three-dot'>
-                    <img src={dot} alt='main-menu'></img>
+                    <button onClick={myFunction}><img src={dot} alt='main-menu'></img></button>
                 </div>
                 <div className='navbar-all-links'>
                     <div className='logo'>
                         <h1>Club</h1>
                         <h4>Collaboration</h4>
                     </div>
-                    <div className='responsive-menu'>
-                        <ul className='navbar-center-link'>
+                    <div className='responsive-menu' id='center-link'>
+                        <ul className='navbar-center-link'  >
                             <li><NavLink exact activeClassName="current" to='/'>Home</NavLink></li>
                             <li><NavLink exact activeClassName="current" to='/Events'>Events</NavLink></li>
                             <li><NavLink exact activeClassName="current" to='/Announcement'>Announcement</NavLink></li>
@@ -30,6 +42,7 @@ const Navbar = ()=>{
                 </div>
              </div>
     )
+    
 }
 
 export default Navbar 

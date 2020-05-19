@@ -1,9 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .menu-2{
     display: flex;
     justify-content: space-evenly;
     height: 100%;
     width: 100%;
     z-index: 99;
+    margin: 0;
+    padding: 0;
 }
 
 .bada-flex:after{
@@ -34,6 +41,7 @@
 }
 .menu-list{
     margin: 15px;
+    margin-right: 0;
     z-index: 99;
 }
 .cross-img{
@@ -63,7 +71,7 @@
         z-index: 99;
     }
     .cross-img{
-        padding: 20px;
+        padding: 15px;
         padding-bottom: 0;
         z-index: 99;
     }

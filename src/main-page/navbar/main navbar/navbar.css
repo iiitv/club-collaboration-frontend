@@ -36,7 +36,7 @@ body{
     border: none;
     outline: none;
 }
-@media (max-width:640px){
+@media (max-width:750px){
     .all-navbar{
         display:flex;
         justify-content: space-around;

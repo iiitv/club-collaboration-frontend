@@ -21,8 +21,7 @@
     background-color: white;
     width: 25%;
     height: 130%;
-    left: 0;
-    margin-left: 75%;
+    left: 75%;
     top: 0;
     z-index: 99;
 }

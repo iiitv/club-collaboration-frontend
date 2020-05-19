@@ -1,3 +1,17 @@
+
+
+
+.club-area{
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: #EDF5E1;
+}
+
+.clubs{
+    font-size: 30px;
+    text-align: center;
+}
+
 .club-bar{
         padding: 40px 70px;
         display:grid;
@@ -8,31 +22,51 @@
 
 .club-logo{
     width: 100%;
+    cursor: pointer;
     border-radius: 100px;
     max-width: 80px;
 }
 
-.clubs{
-    font-size: 30px;
-    text-align: center;
+abbr[title] {
+    position: relative;
+    text-decoration: underline dotted; 
+    outline: none;
+}
+  
+abbr[title]:hover::after,
+abbr[title]:focus::after {
+    content: attr(title);
+
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: auto;
+    white-space: nowrap;
+    
+    background-color: #5cdb95;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 3px 5px;
 }
 
-.club-area{
-    margin-top: 40px;
-    padding-top: 20px;
-    background-color: #EDF5E1;
-}
 
 @media screen and (max-width: 470px) {
     .club-bar{
-        padding: 40px 10px;
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));        
+        padding: 40px 15px;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));        
+    }
+    .club-logo{
+        max-width: 60px;
     }
 }
 
 @media screen and (max-width: 360px) {
     .club-bar{
-        padding: 40px 10px;
+        padding: 40px 15px;
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));        
+    }
+    .club-logo{
+        max-width: 60px;
     }
 }

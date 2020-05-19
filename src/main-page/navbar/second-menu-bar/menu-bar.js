@@ -10,8 +10,11 @@ x = win.innerWidth || docElem.clientWidth || body.clientWidth,
 y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
 
 class Menubar extends Component{
-    
     render(){
+        onLoad();
+        function onLoad(){
+            document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+        }
         const check = ()=>{
             this.props.history.go(-1);
             document.getElementsByTagName('body')[0].style.overflow = 'auto';
@@ -19,7 +22,7 @@ class Menubar extends Component{
 
     return(
         <div className='menu-2'>
-         <div className='bada-flex'>
+         <div className='bada-flex' onClick={check}>
          </div>
          <div className='chota-flex'>
              <button className='cross-img' onClick={check}><img alt='go-back' src={cross}></img></button>

@@ -17,6 +17,14 @@ body{
     padding: 10px 15px 10px 12px;
     font-size: 20px;
 }
+.navbar-center-link h1{
+    padding: 10px 15px 0px 12px;
+   display: none;
+}
+.navbar-center-link h4{
+    padding: 0px 15px 10px 12px;
+    display: none;
+ }
 .navbar-center-link a{
     text-decoration: none;
     color: rgb(2, 28, 58);
@@ -30,11 +38,6 @@ body{
 }
 .three-dot{
     display:none;   
-}
-.problem-wala-btn{
-    background: transparent;
-    border: none;
-    outline: none;
 }
 @media (max-width:750px){
     .all-navbar{
@@ -68,13 +71,19 @@ body{
     .responsive-menu.center-link{
         display: block;
         position: absolute;
-        
+    }
+    .responsive-menu.center-link ul h1{
+        display: block;
+    }
+    .responsive-menu.center-link ul h4{
+        display: block;
+        border-bottom: 2px solid #379683;
     }
     .responsive-menu.center-link ul{
         display: block;
         margin-left: -85px;
-        background-color:white ;
-        margin-top: 43px;
+        background-color:white;
+        margin-top: -14px;
     }
     .slide-menu-icon{
         margin-right: -15px;

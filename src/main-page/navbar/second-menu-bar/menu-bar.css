@@ -1,5 +1,5 @@
 .menu-2{
-  
+
     display: flex;
     justify-content: space-evenly;
     height: 100%;
@@ -70,9 +70,3 @@
         z-index: 99;
     }
 }
-/* @media (max-height:318px){
-    body{
-        height: 318px;
-        overflow: auto;
-    }
-} */

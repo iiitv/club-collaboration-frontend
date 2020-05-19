@@ -22,6 +22,10 @@ const Navbar = ()=>{
         x.className = 'responsive-menu';
     }
 
+    const overflowFn = ()=>{
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+    }
+
     return(
             <div className='all-navbar'>
                 <div className='three-dot'>
@@ -42,7 +46,7 @@ const Navbar = ()=>{
                         </ul>
                     </div>
                     <div >
-                        <Link to='/menu'><img className='slide-menu-icon' alt='menu' src ={menu}></img></Link>
+                        <button className='problem-wala-btn' onClick={overflowFn}><Link to='/menu'><img className='slide-menu-icon' alt='menu' src ={menu}></img></Link></button>
                     </div>
                 </div>
              </div>

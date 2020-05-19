@@ -29,8 +29,12 @@ body{
     cursor: pointer;
 }
 .three-dot{
-    display:none;
-    
+    display:none;   
+}
+.problem-wala-btn{
+    background: transparent;
+    border: none;
+    outline: none;
 }
 @media (max-width:640px){
     .all-navbar{

@@ -1,10 +1,15 @@
 .menu-2{
+  
     display: flex;
     justify-content: space-evenly;
     height: 100%;
     /* min-height: 540px; */
     z-index: 99;
 }
+/* body{
+    overflow-y:hidden;
+} */
+
 .bada-flex:after{
     flex: 2;
     position: absolute;
@@ -65,3 +70,9 @@
         z-index: 99;
     }
 }
+/* @media (max-height:318px){
+    body{
+        height: 318px;
+        overflow: auto;
+    }
+} */

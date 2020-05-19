@@ -10,14 +10,17 @@ x = win.innerWidth || docElem.clientWidth || body.clientWidth,
 y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
 
 class Menubar extends Component{
+    
     render(){
-       
+        const check = ()=>{
+            this.props.history.go(-1)
+         }
     return(
         <div className='menu-2'>
             <div className='bada-flex'>
             </div>
             <div className='chota-flex'>
-                <button className='cross-img' onClick={()=>this.props.history.go(-1)}><img alt='go-back' src={cross}></img></button>
+                <button className='cross-img' onClick={check}><img alt='go-back' src={cross}></img></button>
                 <ul>
                     <h2 className='menu-list'><NavLink to='/Blogs'>Blogs</NavLink></h2>
                     <h2 className='menu-list'><NavLink to='/Gallery'>Gallery</NavLink></h2>

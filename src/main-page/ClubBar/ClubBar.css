@@ -1,0 +1,38 @@
+.club-bar{
+        padding: 40px 70px;
+        display:grid;
+        grid-gap: 3rem;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));        
+}
+
+.club-logo{
+    width: 100%;
+    border-radius: 100px;
+    max-width: 80px;
+}
+
+.clubs{
+    font-size: 30px;
+    text-align: center;
+}
+
+.club-area{
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: #EDF5E1;
+}
+
+@media screen and (max-width: 470px) {
+    .club-bar{
+        padding: 40px 10px;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));        
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .club-bar{
+        padding: 40px 10px;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));        
+    }
+}

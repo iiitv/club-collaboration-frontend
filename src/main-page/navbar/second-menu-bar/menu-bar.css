@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     height: 100%;
+    width: 100%;
     z-index: 99;
 }
 
@@ -19,10 +20,10 @@
 .chota-flex{
     position: absolute;
     background-color: white;
+    top: 0;
+    left: 75%;
     width: 25%;
     height: 130%;
-    left: 75%;
-    top: 0;
     z-index: 99;
 }
 .chota-flex ul{

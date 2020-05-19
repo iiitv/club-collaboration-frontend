@@ -43,11 +43,11 @@ class Navbar extends Component{
                         <ul className='navbar-center-link'>
                             <h1>Club</h1>
                             <h4>Collaboration</h4>
-                            <li><NavLink exact activeClassName="current" to='/' onClick={handleMenu}>Home</NavLink></li>
-                            <li><NavLink exact activeClassName="current" to='/Events' onClick={handleMenu}>Events</NavLink></li>
-                            <li><NavLink exact activeClassName="current" to='/Announcement' onClick={handleMenu}>Announcement</NavLink></li>
-                            <li><NavLink exact activeClassName="current" to='/Login' onClick={handleMenu}>Login</NavLink></li>
-                            <li><NavLink exact activeClassName="current" to='/Clubs' onClick={handleMenu}>Our Clubs</NavLink></li>
+                            <NavLink exact activeClassName="current" to='/' onClick={handleMenu}><li>Home</li></NavLink>
+                            <NavLink exact activeClassName="current" to='/Events' onClick={handleMenu}><li>Events</li></NavLink>
+                            <NavLink exact activeClassName="current" to='/Announcement' onClick={handleMenu}><li>Announcement</li></NavLink>
+                            <NavLink exact activeClassName="current" to='/Login' onClick={handleMenu}><li>Login</li></NavLink>
+                            <NavLink exact activeClassName="current" to='/Clubs' onClick={handleMenu}><li>Our Clubs</li></NavLink>
                         </ul>
                     </div>
                     <div >

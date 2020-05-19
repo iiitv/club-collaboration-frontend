@@ -3,6 +3,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Navbar from './main-page/navbar/main navbar/navbar'
 import Menubar from './main-page/navbar/second-menu-bar/menu-bar'
 import './index.css'
+import Home from "./main-page/home";
 const App = ()=>{
     return(
         <BrowserRouter>
@@ -11,6 +12,7 @@ const App = ()=>{
                <Switch>
                    <Route path='/menu' component={Menubar}/>
                </Switch>
+               <Home />
             </div>
         </BrowserRouter>
     )

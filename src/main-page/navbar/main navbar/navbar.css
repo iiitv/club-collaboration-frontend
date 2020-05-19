@@ -18,11 +18,11 @@ body{
     font-size: 20px;
 }
 .navbar-center-link h1{
-    padding: 10px 15px 0px 12px;
+    padding: 10px 15px 0px 20px;
    display: none;
 }
 .navbar-center-link h4{
-    padding: 0px 15px 10px 12px;
+    padding: 0px 15px 10px 20px;
     display: none;
  }
 .navbar-center-link a{
@@ -75,18 +75,26 @@ body{
     .responsive-menu.center-link ul h1{
         display: block;
     }
+    .responsive-menu.center-link li{
+        font-size: 17px;
+        padding-left: 20px;
+    }
     .responsive-menu.center-link ul h4{
         display: block;
         border-bottom: 2px solid #379683;
     }
     .responsive-menu.center-link ul{
+        width: 200px;
         display: block;
         margin-left: -85px;
         background-color:white;
-        margin-top: -14px;
+        margin-top: -15px;
     }
     .slide-menu-icon{
         margin-right: -15px;
+    }
+    .navbar-center-link a.current{
+        color:#5CDB95;
     }
 }
 

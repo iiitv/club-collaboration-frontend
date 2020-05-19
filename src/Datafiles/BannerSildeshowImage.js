@@ -3,19 +3,11 @@ const Image=[
   
  {
      id:1,
-    name: "../images/slideshowImages/Mod5.png"
+    name: "../images/slideshowImages/bg1.jpg"
  },
  {
      id:2,
-    name: "../images/slideshowImages/Masquerade.jpg"
- },
- {
-     id:3,
-    name: "../images/slideshowImages/Obscura.png"
- },
- {
-     id:4,
-    name: "../images/slideshowImages/Shades.jpg"
+    name: "../images/slideshowImages/bg1.jpg"
  }
  
     

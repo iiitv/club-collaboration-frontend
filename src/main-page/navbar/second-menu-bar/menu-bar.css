@@ -1,14 +1,9 @@
 .menu-2{
-
     display: flex;
     justify-content: space-evenly;
     height: 100%;
-    /* min-height: 540px; */
     z-index: 99;
 }
-/* body{
-    overflow-y:hidden;
-} */
 
 .bada-flex:after{
     flex: 2;
@@ -17,7 +12,7 @@
     top: 0;
     left: 0;
     width: 75%;
-    height: 120%;
+    height: 130%;
     z-index: 99;
     background-color: rgba(250, 240, 240, 0.65);
 }
@@ -25,14 +20,14 @@
     position: absolute;
     background-color: white;
     width: 25%;
-    height: 120%;
+    height: 130%;
     left: 75%;
     top: 0;
     z-index: 99;
 }
 .chota-flex ul{
     list-style-type: none;
-    margin-top: 130px;
+    margin-top:calc(5vw + 5rem);
     padding-left: 35px;
     z-index: 99;
 }
@@ -45,9 +40,10 @@
     background: transparent;
     outline: none;
     float: right;
-    padding: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
     cursor: pointer;
-    z-index: 99;
+    /* z-index: 99; */
 }
 .menu-list a{
     text-decoration: none;
@@ -57,16 +53,13 @@
     .chota-flex{
         width: 50%;
         left: 50%;
-        z-index: 99;
     }
     .chota-flex ul{
         margin-top: 60px;
         padding-left: 20px;
-        z-index: 99;
     }
     .cross-img{
         padding: 20px;
         padding-bottom: 0;
-        z-index: 99;
     }
 }

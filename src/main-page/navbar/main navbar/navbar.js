@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import {Link,NavLink} from 'react-router-dom'
+import {Link,NavLink ,Switch, Route} from 'react-router-dom'
 import './navbar.css'
 import menu from './menu.png'
 import dot from './3-dot.png'
@@ -55,6 +55,7 @@ class Navbar extends Component{
                     </div>
                 </div>
              </div>
+            
     )
     }
 }

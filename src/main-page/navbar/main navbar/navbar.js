@@ -80,6 +80,7 @@ class Navbar extends Component{
                             <li className='menu-list'><NavLink to='/Members'>Members</NavLink></li>
                             <li className='menu-list'><NavLink to='/About'>About Us</NavLink></li>
                         </ul>
+                        <div className='border'></div>
                      </div>
                 </div>
              </div>

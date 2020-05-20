@@ -26,9 +26,7 @@ class Navbar extends Component{
      
          function handleMenu(){
              var x = document.getElementById('center-link');
-             var y = document.getElementsByClassName('navbar-center-link')[0];
              x.className = 'responsive-menu';
-             y.className = 'navbar-centr-link'
              document.getElementsByTagName('body')[0].style.overflow='auto';
          }
     return(

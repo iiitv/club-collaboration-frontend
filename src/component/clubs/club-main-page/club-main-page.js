@@ -1,10 +1,21 @@
 import React,{Component} from 'react'
-
+import Clubleft from '../club-left-part/club-left-part'
+import Clubright from '../club-right-part/club-right'
+import './club-main-page.css'
 class Clubmainpage extends Component{
     render(){
+        const clubname = this.props.match.params.clubname;
         return(
-            <div>
-                hello world
+            <div className='club-page'>
+               <div className='left-part'>
+                  <Clubleft />
+               </div>
+               <div className='center-part'>
+                    
+               </div>
+               <div className='right-part'>
+                    <Clubright clubname={clubname}/>
+               </div>
             </div>
         )
     }

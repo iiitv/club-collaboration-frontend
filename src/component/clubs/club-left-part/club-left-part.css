@@ -1,0 +1,32 @@
+.club-left-part img{
+    width: 100%;
+    height: 35%;
+}
+.lower-image{
+    height: 25%;
+}
+
+.club-left-part{
+    z-index: -1;
+    margin-top: -100px;
+    height: calc(100% + 100px);
+    width: 25%;
+    position: fixed;
+    background-color:white;
+    align-items: center;
+    text-align: center;
+}
+.top-left-div{
+    padding-top: 100px;
+}
+.club-left-part button{
+    background: transparent;
+    border: 2px solid #379683;
+    padding: 5px 15px 5px 15px;
+    outline: none;
+    color: #05386B;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+}

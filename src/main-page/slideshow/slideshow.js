@@ -21,7 +21,7 @@ const Slideshow = () => {
           <Slide  {...properties} className="adjust">
            {Image.map((article,index)=><div key={index}>
               <div className="each-slide">
-           <img  className="image-sizing" src={article.name}></img>
+           <img  className="image-sizing" src={article.name} alt={article.alt}></img>
             </div>
              </div>
             )}

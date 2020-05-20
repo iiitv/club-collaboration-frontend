@@ -15,7 +15,7 @@ class Navbar extends Component{
                 y.className+= ' left-menu';
                 document.getElementsByClassName('left-menu')[0].style.height = '1000px';
                 body.style.overflow='hidden';
-                body.addEventListener('click',handleMenu)
+                body.addEventListener('click',handleMenu,true);
             }
             else{
              document.getElementsByTagName('body')[0].style.overflow='auto';
@@ -24,9 +24,11 @@ class Navbar extends Component{
             }
          }
      
-         const handleMenu = ()=>{
+         function handleMenu(){
              var x = document.getElementById('center-link');
+             var y = document.getElementsByClassName('navbar-center-link')[0];
              x.className = 'responsive-menu';
+             y.className = 'navbar-centr-link'
              document.getElementsByTagName('body')[0].style.overflow='auto';
          }
     return(

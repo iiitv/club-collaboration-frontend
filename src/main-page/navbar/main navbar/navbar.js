@@ -73,7 +73,7 @@ class Navbar extends Component{
                         <NavLink exact activeClassName="current" to='/Events' onClick={handleMenu}>Events</NavLink>
                         <NavLink exact activeClassName="current" to='/Announcement' onClick={handleMenu}>Announcement</NavLink>
                         <NavLink exact activeClassName="current" to='/Login' onClick={handleMenu}>Login</NavLink>
-                        <span  className='our-club'>Our Clubs</span><br></br>
+                        <span  className='our-club'  onMouseOver={onMouseOver} onMouseOut={onMouseOut}>Our Clubs</span><br></br>
                         <div className='drop-menu'  onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
                             {clubs.map((index)=>
                                 <div key={index.id}>

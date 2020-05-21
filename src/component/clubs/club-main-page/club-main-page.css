@@ -3,8 +3,13 @@
     width: 100%;
 }
 .center-part{
-    flex: 2;
+flex: 2;
+width:40%;
 }
 .left-part{
+    width: 30%;
+}
+.right-part
+{
     width: 30%;
 }

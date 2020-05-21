@@ -1,0 +1,105 @@
+#reason{
+    resize: none;
+}
+.form-container
+{
+    display: inline-block;
+    margin-top: 10vh;
+}
+@media only screen and (min-width:768px)
+{
+input{
+    background:transparent;
+    width: 33vw;
+    height: 6vh;
+    border: 1.3px solid #05386B;
+    color: black;
+    font-size: 20px;
+  
+}
+input::placeholder{
+    font-size: 20px;
+    padding-left: 1rem;
+    color: black;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+textarea{
+    background: transparent;
+    width: 43vw;
+    height: 18vh;
+    border: 1.3px solid #05386B;
+
+}
+textarea::placeholder{
+    font-size: 20px;
+    padding-left: 1rem;
+    color:black;
+}
+.req-btn{
+    float: right;
+    margin-left: 20vh;
+    background: #05386B;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    outline: none;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+}
+}
+@media only screen and (max-width:768px)
+{
+    input{
+    background:transparent;
+    width: 33vw;
+    height: 4vh;
+    border: 1.3px solid #05386B;
+    color: black;
+    font-size: 20px;
+  
+}
+input::placeholder{
+    font-size: 15px;
+    padding-left: 1rem;
+    color: black;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+    
+    textarea{
+        background: transparent;
+        width: 43vw;
+        height: 18vh;
+        border: 1.3px solid #05386B;
+    
+    }
+    textarea::placeholder{
+        font-size: 15px;
+        padding-left: 1rem;
+        color:black;
+    }
+    .req-btn{
+        float: right;
+        background: #05386B;
+        border: none;
+        padding: 5px 15px 5px 15px;
+        outline: none;
+        color: #ffffff;
+        font-weight: lighter;
+        font-size: 15px;
+        margin: 10px 0 10px 0;
+        cursor: pointer;
+    }
+
+}

@@ -1,7 +1,4 @@
 import React from 'react'
-import {BrowserRouter,Route,Switch, Router} from 'react-router-dom'
-import Navbar from './main-page/navbar/main navbar/navbar'
-import React from 'react'
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Navbar from './main-page/navbar/main navbar/navbar'
 import './index.css'

@@ -220,6 +220,7 @@ body{
     background-color: white;
     width: 130px;
     margin-left: 465px;
+    border-radius: 4px;
 }
 .drop-menu a{
     display: block;

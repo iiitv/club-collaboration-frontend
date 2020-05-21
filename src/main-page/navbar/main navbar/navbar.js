@@ -6,6 +6,7 @@ import './navbar.css'
 
 class Navbar extends Component{
     render(){
+        var click = 0;
         const  myFunction = () => {
             var x = document.getElementById('center-link');
             var body = document.getElementsByTagName('body')[0];
@@ -17,10 +18,12 @@ class Navbar extends Component{
                 x.addEventListener('click',function(ev){ev.stopPropagation();},false)
                 y.addEventListener('click',function(ev){
                     var dropdown = document.getElementsByClassName('drop-menu')[0];
-                    if(dropdown.className==='drop-menu'){
+                    if(click===0){
+                        click++;
                     dropdown.className += ' show-drop-menu';}
                     else{
                     dropdown.className = 'drop-menu'
+                    click=0;
                     }
                     ev.stopPropagation();
                 },false)

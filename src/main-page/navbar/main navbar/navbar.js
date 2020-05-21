@@ -1,32 +1,25 @@
 import React,{Component} from 'react'
 import {NavLink} from 'react-router-dom'
+import {connect} from 'react-redux'
 import './navbar.css'
-
 
 class Navbar extends Component{
     render(){
         const  myFunction = () => {
             var x = document.getElementById('center-link');
-            var y = document.getElementsByClassName('navbar-center-link')[0];
             var body = document.getElementsByTagName('body')[0];
             if(x.className === 'responsive-menu'){
                 x.className+=' center-link';
-                y.className+= ' left-menu';
-                document.getElementsByClassName('left-menu')[0].style.height = '1000px';
-                body.style.overflow='hidden';
                 body.addEventListener('click',handleMenu,true);
             }
             else{
-             document.getElementsByTagName('body')[0].style.overflow='auto';
                 x.className = 'responsive-menu';
-                y.className = 'navbar-centr-link'
             }
          }
      
          function handleMenu(){
              var x = document.getElementById('center-link');
              x.className = 'responsive-menu';
-             document.getElementsByTagName('body')[0].style.overflow='auto';
          }
 
          function handleSidemenu(){
@@ -34,13 +27,21 @@ class Navbar extends Component{
              if(sidemenu.className==='menu-2')
              {
                  sidemenu.className+=' side-menu';
-                 document.getElementsByTagName('body')[0].style.overflow='auto';
              }
              else{
                  sidemenu.className = 'menu-2';
-                 document.getElementsByTagName('body')[0].style.overflow='hidden';
              }
          }
+        
+         function onMouseOver(){
+            var dropdown = document.getElementsByClassName('drop-menu')[0];
+            dropdown.className += ' show-drop-menu';
+         }
+         function onMouseOut(){
+            var dropdown = document.getElementsByClassName('drop-menu')[0];
+             dropdown.className = 'drop-menu'
+         }
+         var clubs = this.props.club;
     return(
             <div className='all-navbar'>
                 <div className='three-dot'>
@@ -52,15 +53,22 @@ class Navbar extends Component{
                         <h4>Collaboration</h4>
                     </div>
                     <div className='responsive-menu' id='center-link'>
-                        <ul className='navbar-center-link'>
-                            <h1>Club</h1>
-                            <h4>Collaboration</h4>
-                            <NavLink exact activeClassName="current" to='/' onClick={handleMenu}><li>Home</li></NavLink>
-                            <NavLink exact activeClassName="current" to='/Events' onClick={handleMenu}><li>Events</li></NavLink>
-                            <NavLink exact activeClassName="current" to='/Announcement' onClick={handleMenu}><li>Announcement</li></NavLink>
-                            <NavLink exact activeClassName="current" to='/Login' onClick={handleMenu}><li>Login</li></NavLink>
-                            <NavLink exact activeClassName="current" to='/Clubs' onClick={handleMenu}><li>Our Clubs</li></NavLink>
-                        </ul>
+                        <h1>Club</h1>
+                        <h4>Collaboration</h4>
+                        <NavLink exact activeClassName="current" to='/' onClick={handleMenu}>Home</NavLink>
+                        <NavLink exact activeClassName="current" to='/Events' onClick={handleMenu}>Events</NavLink>
+                        <NavLink exact activeClassName="current" to='/Announcement' onClick={handleMenu}>Announcement</NavLink>
+                        <NavLink exact activeClassName="current" to='/Login' onClick={handleMenu}>Login</NavLink>
+                        <span onMouseOver={onMouseOver} onMouseOut={onMouseOut} onClick={onMouseOver}>Our Clubs</span><br></br>
+                        <div className='drop-menu'  onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
+                            {clubs.map((index)=>
+                                <div key={index.id}>
+                                    <NavLink exact activeClassName='active-drop-down' to={'/club/' + index.club}>
+                                       {index.club}
+                                    </NavLink> 
+                                </div>
+                            )}
+                        </div>
                     </div>
                     <div >
                         <img className='slide-menu-icon' onClick={handleSidemenu} alt='menu' src ='../images/navbar-image/menu.png'></img>
@@ -68,7 +76,7 @@ class Navbar extends Component{
                 </div>
                 <div className='menu-2 side-menu'>
                     <div className='bada-flex' onClick={handleSidemenu}>
-                    </div>
+                    </div>   
                     <div className='chota-flex'>
                         <button className='cross-img' onClick={handleSidemenu}><img alt='go-back' src='../images/navbar-image/cross.png'></img></button>
                         <ul>
@@ -88,4 +96,10 @@ class Navbar extends Component{
     }
 }
 
-export default Navbar 
+const mapStateToProps = (state)=>{
+    return{
+        club:state.clubs.club
+    }
+}
+
+export default connect(mapStateToProps)(Navbar) 

@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux'
+
 import './navbar.css'
 
 class Navbar extends Component{
@@ -105,6 +106,7 @@ class Navbar extends Component{
                      </div>
                 </div>
              </div>
+            
     )
     
     

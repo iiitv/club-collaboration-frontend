@@ -8,9 +8,21 @@ class Navbar extends Component{
         const  myFunction = () => {
             var x = document.getElementById('center-link');
             var body = document.getElementsByTagName('body')[0];
+            var y = document.getElementsByClassName('our-club')[0]
             if(x.className === 'responsive-menu'){
                 x.className+=' center-link';
-                body.addEventListener('click',handleMenu,true);
+                body.addEventListener('click',function(){var x = document.getElementById('center-link');
+                x.className = 'responsive-menu';},false);
+                x.addEventListener('click',function(ev){ev.stopPropagation();},false)
+                y.addEventListener('click',function(ev){
+                    var dropdown = document.getElementsByClassName('drop-menu')[0];
+                    if(dropdown.className==='drop-menu'){
+                    dropdown.className += ' show-drop-menu';}
+                    else{
+                    dropdown.className = 'drop-menu'
+                    }
+                    ev.stopPropagation();
+                },false)
             }
             else{
                 x.className = 'responsive-menu';
@@ -35,7 +47,8 @@ class Navbar extends Component{
         
          function onMouseOver(){
             var dropdown = document.getElementsByClassName('drop-menu')[0];
-            dropdown.className += ' show-drop-menu';
+            if(dropdown.className==='drop-menu'){
+            dropdown.className += ' show-drop-menu';}
          }
          function onMouseOut(){
             var dropdown = document.getElementsByClassName('drop-menu')[0];
@@ -59,7 +72,7 @@ class Navbar extends Component{
                         <NavLink exact activeClassName="current" to='/Events' onClick={handleMenu}>Events</NavLink>
                         <NavLink exact activeClassName="current" to='/Announcement' onClick={handleMenu}>Announcement</NavLink>
                         <NavLink exact activeClassName="current" to='/Login' onClick={handleMenu}>Login</NavLink>
-                        <span onMouseOver={onMouseOver} onMouseOut={onMouseOut} onClick={onMouseOver}>Our Clubs</span><br></br>
+                        <span  className='our-club'>Our Clubs</span><br></br>
                         <div className='drop-menu'  onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
                             {clubs.map((index)=>
                                 <div key={index.id}>
@@ -93,7 +106,10 @@ class Navbar extends Component{
                 </div>
              </div>
     )
+    
+    
     }
+    
 }
 
 const mapStateToProps = (state)=>{

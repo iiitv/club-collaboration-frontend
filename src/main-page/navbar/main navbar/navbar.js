@@ -1,8 +1,8 @@
 import React,{Component} from 'react'
 import {Link,NavLink ,Switch, Route} from 'react-router-dom'
+
 import './navbar.css'
-import menu from './menu.png'
-import dot from './3-dot.png'
+
 
 class Navbar extends Component{
     render(){
@@ -29,10 +29,23 @@ class Navbar extends Component{
              x.className = 'responsive-menu';
              document.getElementsByTagName('body')[0].style.overflow='auto';
          }
+
+         function handleSidemenu(){
+             var sidemenu = document.getElementsByClassName('menu-2')[0];
+             if(sidemenu.className==='menu-2')
+             {
+                 sidemenu.className+=' side-menu';
+                 document.getElementsByTagName('body')[0].style.overflow='auto';
+             }
+             else{
+                 sidemenu.className = 'menu-2';
+                 document.getElementsByTagName('body')[0].style.overflow='hidden';
+             }
+         }
     return(
             <div className='all-navbar'>
                 <div className='three-dot'>
-                    <button onClick={myFunction}><img src={dot} alt='main-menu'></img></button>
+                    <button onClick={myFunction}><img src='../images/navbar-image/3-dot.png' alt='main-menu'></img></button>
                 </div>
                 <div className='navbar-all-links'>
                     <div className='logo'>
@@ -51,8 +64,25 @@ class Navbar extends Component{
                         </ul>
                     </div>
                     <div >
-                  <Link to='/menu'><img className='slide-menu-icon' alt='menu' src ={menu}></img></Link>
+                        <img className='slide-menu-icon' onClick={handleSidemenu} alt='menu' src ='../images/navbar-image/menu.png'></img>
                     </div>
+                </div>
+                <div className='menu-2 side-menu'>
+                    <div className='bada-flex' onClick={handleSidemenu}>
+                    </div>
+                    <div className='chota-flex'>
+                        <button className='cross-img' onClick={handleSidemenu}><img alt='go-back' src='../images/navbar-image/cross.png'></img></button>
+                        <ul>
+                            <h2 className='menu-list'><NavLink to='/Blogs'>Blogs</NavLink></h2>
+                            <h2 className='menu-list'><NavLink to='/Gallery'>Gallery</NavLink></h2>
+                            <h2 className='menu-list'><NavLink to='/Contact'>Contact</NavLink></h2>
+                            <li className='menu-list'><NavLink to='/Posts'>Posts</NavLink></li>
+                            <li className='menu-list'><NavLink to='/News'>News</NavLink></li>
+                            <li className='menu-list'><NavLink to='/Members'>Members</NavLink></li>
+                            <li className='menu-list'><NavLink to='/About'>About Us</NavLink></li>
+                        </ul>
+                        <div className='border'></div>
+                     </div>
                 </div>
              </div>
             

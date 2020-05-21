@@ -77,31 +77,29 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-    
-    textarea{
-        background: transparent;
-        width: 43vw;
-        height: 18vh;
-        border: 1.3px solid #05386B;
-        font-size: 15px;
-    
-    }
-    textarea::placeholder{
-        font-size: 15px;
-        padding-left: 1rem;
-        color:black;
-    }
-    .req-btn{
-        float: right;
-        background: #05386B;
-        border: none;
-        padding: 5px 15px 5px 15px;
-        outline: none;
-        color: #ffffff;
-        font-weight: lighter;
-        font-size: 15px;
-        margin: 10px 0 10px 0;
-        cursor: pointer;
+textarea{
+    background: transparent;
+    width: 43vw;
+    height: 18vh;
+    border: 1.3px solid #05386B;
+    font-size: 15px;
+}
+textarea::placeholder{
+    font-size: 15px;
+    padding-left: 1rem;
+    color:black;
+}
+.req-btn{
+    float: right;
+    background: #05386B;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    outline: none;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
     }
 
 }

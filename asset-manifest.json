@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/club-collaboration-frontend/static/css/main.fdcc8eb8.chunk.css",
+    "main.js": "/club-collaboration-frontend/static/js/main.c5b84d45.chunk.js",
+    "main.js.map": "/club-collaboration-frontend/static/js/main.c5b84d45.chunk.js.map",
+    "runtime-main.js": "/club-collaboration-frontend/static/js/runtime-main.35a0f001.js",
+    "runtime-main.js.map": "/club-collaboration-frontend/static/js/runtime-main.35a0f001.js.map",
+    "static/css/2.043b003d.chunk.css": "/club-collaboration-frontend/static/css/2.043b003d.chunk.css",
+    "static/js/2.dc954d04.chunk.js": "/club-collaboration-frontend/static/js/2.dc954d04.chunk.js",
+    "static/js/2.dc954d04.chunk.js.map": "/club-collaboration-frontend/static/js/2.dc954d04.chunk.js.map",
+    "index.html": "/club-collaboration-frontend/index.html",
+    "precache-manifest.a6dd0ab96c072ebe116b685540b8dad5.js": "/club-collaboration-frontend/precache-manifest.a6dd0ab96c072ebe116b685540b8dad5.js",
+    "service-worker.js": "/club-collaboration-frontend/service-worker.js",
+    "static/css/2.043b003d.chunk.css.map": "/club-collaboration-frontend/static/css/2.043b003d.chunk.css.map",
+    "static/css/main.fdcc8eb8.chunk.css.map": "/club-collaboration-frontend/static/css/main.fdcc8eb8.chunk.css.map",
+    "static/js/2.dc954d04.chunk.js.LICENSE.txt": "/club-collaboration-frontend/static/js/2.dc954d04.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35a0f001.js",
+    "static/css/2.043b003d.chunk.css",
+    "static/js/2.dc954d04.chunk.js",
+    "static/css/main.fdcc8eb8.chunk.css",
+    "static/js/main.c5b84d45.chunk.js"
+  ]
+}

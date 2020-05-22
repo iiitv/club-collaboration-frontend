@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88e3a981448811807c7ced7aa6b6ac41",
+    "revision": "6f776a18f86da148d87c131674465aba",
     "url": "/club-collaboration-frontend/index.html"
   },
   {
-    "revision": "69f6282d8c5b6846b90a",
+    "revision": "7504dba5e1a55043d218",
     "url": "/club-collaboration-frontend/static/css/2.043b003d.chunk.css"
   },
   {
-    "revision": "bec659e6efe7d8df41ce",
+    "revision": "9b24d544abd1898e0c0e",
     "url": "/club-collaboration-frontend/static/css/main.fdcc8eb8.chunk.css"
   },
   {
-    "revision": "69f6282d8c5b6846b90a",
-    "url": "/club-collaboration-frontend/static/js/2.dc954d04.chunk.js"
+    "revision": "7504dba5e1a55043d218",
+    "url": "/club-collaboration-frontend/static/js/2.ad34e196.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/club-collaboration-frontend/static/js/2.dc954d04.chunk.js.LICENSE.txt"
+    "url": "/club-collaboration-frontend/static/js/2.ad34e196.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bec659e6efe7d8df41ce",
-    "url": "/club-collaboration-frontend/static/js/main.c5b84d45.chunk.js"
+    "revision": "9b24d544abd1898e0c0e",
+    "url": "/club-collaboration-frontend/static/js/main.f3ea5ef2.chunk.js"
   },
   {
     "revision": "9e7d5e0cd20122a097dc",

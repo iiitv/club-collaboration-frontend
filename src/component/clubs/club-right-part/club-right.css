@@ -4,16 +4,16 @@
     z-index: 0;
 }
 .club-right-part{
-    background-color: rgb(127, 246, 181);
-    text-align: center;
-    align-items: center;
-    position: fixed;
-    width: 25%;
-    right:0;
-    height: 105%;
-    margin-top: -100px;
     z-index: -1;
-    overflow-x: hidden;
+    margin-top: -100px;
+    width: 25%;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    overflow-x:hidden;
+    background-color: rgb(127, 246, 181);
+    right:0;
+    height: 110%;
 }
 .club-name{
     margin-bottom: 50px;

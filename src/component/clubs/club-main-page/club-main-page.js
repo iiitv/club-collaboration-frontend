@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import Clubleft from '../club-left-part/club-left-part'
 import Clubright from '../club-right-part/club-right'
 import './club-main-page.css'
-import {Link,BrowserRouter as Router ,Route,Switch} from "react-router-dom"
+import {BrowserRouter as Router ,Route,Switch} from "react-router-dom"
 import Request from "../club-middle-part/request"
 class Clubmainpage extends Component{
     render(){

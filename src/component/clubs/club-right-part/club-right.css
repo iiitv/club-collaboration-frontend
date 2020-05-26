@@ -9,10 +9,11 @@
     align-items: center;
     position: fixed;
     width: 25%;
-    left: 75%;
-    height: calc(100% + 90px);
+    right:0;
+    height: 105%;
     margin-top: -100px;
     z-index: -1;
+    overflow-x: hidden;
 }
 .club-name{
     margin-bottom: 50px;

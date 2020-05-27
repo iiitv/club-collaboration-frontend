@@ -1,17 +1,20 @@
-const Image=[
-
-  
- {
-     id:1,
-    name: "../images/slideshowImages/bg1.jpg",
+const ImageData={
+    name : [
+{
+    id:1,
+    name: "Images/slideshowImages/bg1.jpg",
     alt:"background1"
  },
  {
-     id:2,
-    name: "../images/slideshowImages/bg1.jpg",
+    id:2,
+    name: "Images/slideshowImages/bg1.jpg",
     alt:"background1"
  }
+]
+}
+const bannerReducer =(state=ImageData,action)=>{
+    return state;
+}
+   
  
-    
- ];
- export default Image;
+ export default bannerReducer;

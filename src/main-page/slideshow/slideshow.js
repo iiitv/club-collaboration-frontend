@@ -1,9 +1,10 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "./slideshow.css";
-import Image from "../../Datafiles/BannerSildeshowImage";
+import {connect} from "react-redux"
+// import Image from "../../Datafiles/BannerSildeshowImage";
 
-const Slideshow = () => {
+const Slideshow = (props) => {
   const properties = {
     duration: 5000,
     transitionDuration: 1000,
@@ -12,24 +13,36 @@ const Slideshow = () => {
     arrows: true,
     pauseOnHover: true,
   };
+  let Images = [];
+  props.name.map(name=>{
+    return (
+    Images = [...Images,name]
+    )
+  });
 
   return (
     <div className="slide-container">
       <Slide {...properties} className="adjust">
-        {Image.map((article, index) => (
-          <div key={index}>
+        {Images.map((index) => (
+          <div key={index.id}>
             <div className="each-slide">
               <img
                 className="image-sizing"
-                src={article.name}
-                alt={article.alt}
+                src={index.name}
+                alt={index.alt}
               ></img>
             </div>
           </div>
         ))}
       </Slide>
     </div>
-  );
-};
+  )
+}
 
-export default Slideshow;
+// export default Slideshow;
+const mapStateToprops=(state)=>{
+  return{
+    name:state.banner.name
+  }
+}
+export default connect(mapStateToprops)(Slideshow)

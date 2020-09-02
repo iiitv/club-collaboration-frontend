@@ -1,72 +1,79 @@
-
-
-
-.club-area{
-    margin-top: 40px;
-    padding-top: 20px;
-    background-color: #EDF5E1;
+.club-area {
+  margin-top: 40px;
+  padding-top: 20px;
+  background-color: #ffffff;
 }
 
-.clubs{
-    font-size: 30px;
-    text-align: center;
+.clubs {
+  font-size: 30px;
+  text-align: center;
 }
 
-.club-bar{
-        padding: 40px 70px;
-        display:grid;
-        grid-gap: 3rem;
-        justify-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));        
+.club-bar {
+  padding: 40px 70px;
+  display: grid;
+  grid-gap: 3rem;
+  justify-items: center;
+  transition: 0.5s;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+.club-bar:hover .club-logo {
+  filter: blur(10px);
+  transform: scale(0.9);
+  opacity: 0.5;
 }
 
-.club-logo{
-    width: 100%;
-    cursor: pointer;
-    border-radius: 100px;
-    max-width: 80px;
+.club-logo {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 100px;
+  max-width: 80px;
 }
-
+.club-bar .club-logo:hover {
+  filter: blur(0px);
+  transform: scale(1.11);
+  opacity: 1;
+}
 abbr[title] {
-    position: relative;
-    text-decoration: underline dotted; 
-    outline: none;
+  position: relative;
+  text-decoration: underline dotted;
+  outline: none;
 }
-  
+
 abbr[title]:hover::after,
 abbr[title]:focus::after {
-    content: attr(title);
+  content: attr(title);
 
-    position: absolute;
-    left: 0;
-    bottom: -30px;
-    width: auto;
-    white-space: nowrap;
-    
-    background-color: #5cdb95;
-    color: #fff;
-    border-radius: 3px;
-    font-size: 15px;
-    padding: 3px 5px;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: auto;
+  white-space: nowrap;
+
+  background-color: #5cdb95;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 3px 5px;
 }
 
-
 @media screen and (max-width: 470px) {
-    .club-bar{
-        padding: 40px 15px;
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));        
-    }
-    .club-logo{
-        max-width: 60px;
-    }
+  .club-bar {
+    padding: 40px 15px;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  .club-logo {
+    max-width: 60px;
+  }
 }
 
 @media screen and (max-width: 360px) {
-    .club-bar{
-        padding: 40px 15px;
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));        
-    }
-    .club-logo{
-        max-width: 60px;
-    }
+  .club-bar {
+    padding: 40px 15px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+  .club-logo {
+    max-width: 60px;
+  }
 }

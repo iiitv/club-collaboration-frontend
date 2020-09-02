@@ -3,7 +3,7 @@ import "./request.css";
 
 const requestJoin = () => {
   return (
-    <div class="form-container">
+    <div className="form-container">
       <form autoComplete="off">
         <input type="text" id="name" name="name" placeholder="Name"></input>
         <br />

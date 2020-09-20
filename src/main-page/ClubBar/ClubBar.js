@@ -16,11 +16,7 @@ const Clubs = (props) => {
           <div key={index.id}>
             <NavLink exact to={"/club/" + index.club}>
               <abbr title={index.club} tabIndex="0">
-                <img
-                  className="club-logo"
-                  src={index.image}
-                  alt={index.club}
-                ></img>
+                <img className="club-logo" src={index.image} alt={index.club} />
               </abbr>
             </NavLink>
           </div>

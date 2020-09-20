@@ -6,11 +6,11 @@ import "./navbar.css";
 
 class Navbar extends Component {
   render() {
-    var click = 0;
+    const click = 0;
     const myFunction = () => {
-      var x = document.getElementById("center-link");
-      var body = document.getElementsByTagName("body")[0];
-      var y = document.getElementsByClassName("our-club")[0];
+      const x = document.getElementById("center-link");
+      const body = document.getElementsByTagName("body")[0];
+      const y = document.getElementsByClassName("our-club")[0];
       if (x.className === "responsive-menu") {
         x.className += " center-link";
         body.addEventListener(
@@ -31,7 +31,7 @@ class Navbar extends Component {
         y.addEventListener(
           "click",
           function (ev) {
-            var dropdown = document.getElementsByClassName("drop-menu")[0];
+            const dropdown = document.getElementsByClassName("drop-menu")[0];
             if (click === 0) {
               click++;
               dropdown.className += " show-drop-menu";
@@ -49,12 +49,12 @@ class Navbar extends Component {
     };
 
     function handleMenu() {
-      var x = document.getElementById("center-link");
+      const x = document.getElementById("center-link");
       x.className = "responsive-menu";
     }
 
     function handleSidemenu() {
-      var sidemenu = document.getElementsByClassName("menu-2")[0];
+      const sidemenu = document.getElementsByClassName("menu-2")[0];
       if (sidemenu.className === "menu-2") {
         sidemenu.className += " side-menu";
       } else {
@@ -63,16 +63,30 @@ class Navbar extends Component {
     }
 
     function onMouseOver() {
-      var dropdown = document.getElementsByClassName("drop-menu")[0];
+      const dropdown = document.getElementsByClassName("drop-menu")[0];
       if (dropdown.className === "drop-menu") {
         dropdown.className += " show-drop-menu";
       }
     }
     function onMouseOut() {
-      var dropdown = document.getElementsByClassName("drop-menu")[0];
+      const dropdown = document.getElementsByClassName("drop-menu")[0];
       dropdown.className = "drop-menu";
     }
-    var clubs = this.props.club;
+    const renderSideBarNavLink = (to, title) => {
+      return (
+        <h2 className={"menu-list"}>
+          <NavLink to={to}>{title}</NavLink>
+        </h2>
+      );
+    };
+    const renderMenuNavLink = (to, title) => {
+      return (
+        <NavLink exact activeClassName="current" to={to} onClick={handleMenu}>
+          {title}
+        </NavLink>
+      );
+    };
+    const clubs = this.props.club;
     return (
       <div className="all-navbar">
         <div className="three-dot">
@@ -88,38 +102,10 @@ class Navbar extends Component {
           <div className="responsive-menu" id="center-link">
             <h1>Club</h1>
             <h4>Collaboration</h4>
-            <NavLink
-              exact
-              activeClassName="current"
-              to="/"
-              onClick={handleMenu}
-            >
-              Home
-            </NavLink>
-            <NavLink
-              exact
-              activeClassName="current"
-              to="/Events"
-              onClick={handleMenu}
-            >
-              Events
-            </NavLink>
-            <NavLink
-              exact
-              activeClassName="current"
-              to="/Announcement"
-              onClick={handleMenu}
-            >
-              Announcement
-            </NavLink>
-            <NavLink
-              exact
-              activeClassName="current"
-              to="/Login"
-              onClick={handleMenu}
-            >
-              Login
-            </NavLink>
+            {renderMenuNavLink("/", "Home")}
+            {renderMenuNavLink("/Events", "Events")}
+            {renderMenuNavLink("/Announcement", "Announcement")}
+            {renderMenuNavLink("/Login", "Login")}
             <span
               className="our-club"
               onMouseOver={onMouseOver}
@@ -138,7 +124,7 @@ class Navbar extends Component {
                   <NavLink
                     exact
                     activeClassName="active-drop-down"
-                    to={"/club/" + index.club}
+                    to={`/club/${index.club}`}
                   >
                     {index.club}
                   </NavLink>
@@ -162,27 +148,13 @@ class Navbar extends Component {
               <img alt="go-back" src="../images/navbar-image/cross.png"></img>
             </button>
             <ul>
-              <h2 className="menu-list">
-                <NavLink to="/Blogs">Blogs</NavLink>
-              </h2>
-              <h2 className="menu-list">
-                <NavLink to="/Gallery">Gallery</NavLink>
-              </h2>
-              <h2 className="menu-list">
-                <NavLink to="/Contact">Contact</NavLink>
-              </h2>
-              <h2 className="menu-list">
-                <NavLink to="/Posts">Posts</NavLink>
-              </h2>
-              <h2 className="menu-list">
-                <NavLink to="/News">News</NavLink>
-              </h2>
-              <h2 className="menu-list">
-                <NavLink to="/Members">Members</NavLink>
-              </h2>
-              <h2 className="menu-list">
-                <NavLink to="/About">About Us</NavLink>
-              </h2>
+              {renderSideBarNavLink("/Blogs", "Blogs")}
+              {renderSideBarNavLink("/Gallery", "Gallery")}
+              {renderSideBarNavLink("/Contact", "Contact")}
+              {renderSideBarNavLink("/Posts", "Posts")}
+              {renderSideBarNavLink("/News", "News")}
+              {renderSideBarNavLink("/Members", "Members")}
+              {renderSideBarNavLink("/About", "About us")}
             </ul>
             <div className="border"></div>
           </div>

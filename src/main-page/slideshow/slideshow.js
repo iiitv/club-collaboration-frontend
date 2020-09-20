@@ -1,7 +1,7 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "./slideshow.css";
-import {connect} from "react-redux"
+import { connect } from "react-redux";
 // import Image from "../../Datafiles/BannerSildeshowImage";
 
 const Slideshow = (props) => {
@@ -14,10 +14,8 @@ const Slideshow = (props) => {
     pauseOnHover: true,
   };
   let Images = [];
-  props.name.map(name=>{
-    return (
-    Images = [...Images,name]
-    )
+  props.name.map((name) => {
+    return (Images = [...Images, name]);
   });
 
   return (
@@ -26,23 +24,19 @@ const Slideshow = (props) => {
         {Images.map((index) => (
           <div key={index.id}>
             <div className="each-slide">
-              <img
-                className="image-sizing"
-                src={index.name}
-                alt={index.alt}
-              ></img>
+              <img className="image-sizing" src={index.name} alt={index.alt} />
             </div>
           </div>
         ))}
       </Slide>
     </div>
-  )
-}
+  );
+};
 
 // export default Slideshow;
-const mapStateToprops=(state)=>{
-  return{
-    name:state.banner.name
-  }
-}
-export default connect(mapStateToprops)(Slideshow)
+const mapStateToprops = (state) => {
+  return {
+    name: state.banner.name,
+  };
+};
+export default connect(mapStateToprops)(Slideshow);

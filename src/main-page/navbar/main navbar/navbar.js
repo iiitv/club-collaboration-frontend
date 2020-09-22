@@ -32,7 +32,7 @@ class Navbar extends Component{
                 x.className = 'responsive-menu';
             }
          }
-     
+
          function handleMenu(){
              var x = document.getElementById('center-link');
              x.className = 'responsive-menu';
@@ -48,8 +48,8 @@ class Navbar extends Component{
                  sidemenu.className = 'menu-2';
              }
          }
-        
-         function onMouseOver(){
+
+         function onClick(){
             var dropdown = document.getElementsByClassName('drop-menu')[0];
             if(dropdown.className==='drop-menu'){
             dropdown.className += ' show-drop-menu';}
@@ -76,13 +76,14 @@ class Navbar extends Component{
                         <NavLink exact activeClassName="current" to='/Events' onClick={handleMenu}>Events</NavLink>
                         <NavLink exact activeClassName="current" to='/Announcement' onClick={handleMenu}>Announcement</NavLink>
                         <NavLink exact activeClassName="current" to='/Login' onClick={handleMenu}>Login</NavLink>
-                        <span  className='our-club'  onMouseOver={onMouseOver} onMouseOut={onMouseOut}>Our Clubs</span><br></br>
-                        <div className='drop-menu'  onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
+
+                        <span  className='our-club'  onClick={onClick} onMouseOut={onMouseOut} >Our Clubs</span><br></br>
+                        <div className='drop-menu' onMouseOver={onClick}onMouseOut={onMouseOut}>
                             {clubs.map((index)=>
-                                <div key={index.id}>
+                                <div key={index.id} >
                                     <NavLink exact activeClassName='active-drop-down' to={'/club/' + index.club}>
                                        {index.club}
-                                    </NavLink> 
+                                    </NavLink>
                                 </div>
                             )}
                         </div>
@@ -93,7 +94,7 @@ class Navbar extends Component{
                 </div>
                 <div className='menu-2 side-menu'>
                     <div className='bada-flex' onClick={handleSidemenu}>
-                    </div>   
+                    </div>
                     <div className='chota-flex'>
                         <button className='cross-img' onClick={handleSidemenu}><img alt='go-back' src='../images/navbar-image/cross.png'></img></button>
                         <ul>
@@ -109,12 +110,12 @@ class Navbar extends Component{
                      </div>
                 </div>
              </div>
-            
+
     )
-    
-    
+
+
     }
-    
+
 }
 
 const mapStateToProps = (state)=>{
@@ -123,4 +124,4 @@ const mapStateToProps = (state)=>{
     }
 }
 
-export default connect(mapStateToProps)(Navbar) 
+export default connect(mapStateToProps)(Navbar)

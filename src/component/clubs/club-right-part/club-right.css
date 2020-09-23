@@ -28,3 +28,18 @@
 .club-right-part p{
     margin-bottom: 30px;
 }
+@media only screen and (max-width : 810px)
+{
+    .club-right-part img{
+        height: 8%;
+    }
+    .club-right-part h2{
+        font-size : 20px; 
+    }
+    .club-right-part h4{
+        font-size : 15px;
+    }
+    .club-right-part p{
+        font-size : 15px 
+    }
+}

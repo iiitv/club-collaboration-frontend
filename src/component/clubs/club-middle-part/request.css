@@ -58,13 +58,13 @@
   input {
     background: transparent;
     width: 33vw;
-    height: 6vh;
+    height: 4vh;
     border: 1.3px solid #05386b;
     color: black;
     font-size: 15px;
   }
   input::placeholder {
-    font-size: 15px;
+    font-size: 13px;
     padding-left: 1rem;
     color: black;
   }
@@ -81,7 +81,7 @@
     font-size: 15px;
   }
   textarea::placeholder {
-    font-size: 15px;
+    font-size: 13px;
     padding-left: 1rem;
     color: black;
   }
@@ -89,11 +89,11 @@
     float: right;
     background: #05386b;
     border: none;
-    padding: 5px 15px 5px 15px;
+    padding: 3px 10px 3px 10px;
     outline: none;
     color: #ffffff;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 13px;
     margin: 10px 0 10px 0;
     cursor: pointer;
   }

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import "./navbar.css";
 const Navbar = (props) => {
-  const click = 0;
+  let click = 0;
   const myFunction = () => {
     const x = document.getElementById("center-link");
     const body = document.getElementsByTagName("body")[0];

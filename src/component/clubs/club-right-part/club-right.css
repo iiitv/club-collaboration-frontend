@@ -33,13 +33,13 @@
     .club-right-part img{
         height: 8%;
     }
-    .club-right-part h2{
-        font-size : 20px; 
+    .club-name{
+        font-size:13px
     }
     .club-right-part h4{
-        font-size : 15px;
+        font-size : 13px;
     }
     .club-right-part p{
-        font-size : 15px 
+        font-size : 12px 
     }
 }

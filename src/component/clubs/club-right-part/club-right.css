@@ -34,12 +34,12 @@
         height: 8%;
     }
     .club-name{
-        font-size:13px
+        font-size: 0.8em;
     }
     .club-right-part h4{
-        font-size : 13px;
+        font-size : 1em;
     }
     .club-right-part p{
-        font-size : 12px 
+        font-size : 0.8em; 
     }
 }

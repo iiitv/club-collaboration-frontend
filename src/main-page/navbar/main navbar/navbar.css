@@ -205,10 +205,10 @@ body {
     padding-bottom: 0;
     z-index: 99;
   }
-  .logo h1{
+  .logo h1 {
     font-size :20px
   }
-  .logo h4{
+  .logo h4 {
     font-size : 9px;
   }
 }

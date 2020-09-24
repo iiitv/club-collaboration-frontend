@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
-import "./navbar.css";
+import "./Navbar.css";
 const Navbar = (props) => {
   let click = 0;
   const myFunction = () => {

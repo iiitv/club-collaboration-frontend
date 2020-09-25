@@ -1,6 +1,6 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
-import "./slideshow.css";
+import "./Slideshow.css";
 import { connect } from "react-redux";
 // import Image from "../../Datafiles/BannerSildeshowImage";
 

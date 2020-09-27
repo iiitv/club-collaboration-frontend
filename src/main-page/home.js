@@ -1,5 +1,5 @@
 import React from "react";
-import Slideshow from "./slideshow/slideshow";
+import Slideshow from "./Slideshow/Slideshow";
 import ClubBar from './ClubBar/ClubBar'
 
 

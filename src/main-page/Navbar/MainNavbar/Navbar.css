@@ -205,6 +205,12 @@ body {
     padding-bottom: 0;
     z-index: 99;
   }
+  .logo h1 {
+    font-size :20px
+  }
+  .logo h4 {
+    font-size : 9px;
+  }
 }
 @media (max-height: 400px) {
   .chota-flex ul {
@@ -248,3 +254,4 @@ body {
 .show-drop-menu {
   display: block;
 }
+

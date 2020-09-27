@@ -9,7 +9,7 @@ const Home=()=>
         <div>
         <Slideshow />
         <ClubBar/>
-       
+
         </div>
 
     );

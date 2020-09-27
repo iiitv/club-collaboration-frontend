@@ -105,7 +105,7 @@ const Navbar = (props) => {
           {renderMenuNavLink("/Login", "Login")}
           <span
             className="our-club"
-            onMouseOver={onMouseOver}
+            onClick={onMouseOver}
             onMouseOut={onMouseOut}
           >
             Our Clubs
@@ -167,4 +167,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(Navbar);
-

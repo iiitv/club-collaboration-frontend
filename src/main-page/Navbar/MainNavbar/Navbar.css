@@ -1,6 +1,7 @@
 body {
   color: rgb(2, 28, 58);
 }
+
 .navbar-all-links {
   display: flex;
   justify-content: space-between;
@@ -81,6 +82,7 @@ body {
     margin-left: -40px;
   }
   .logo h1 {
+
     font-size: 19px;
   }
   .navbar-all-links {
@@ -255,3 +257,7 @@ body {
   display: block;
 }
 
+#logo {
+  text-decoration: none;
+  color: rgb(2, 28, 58);
+}

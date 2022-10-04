@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import "./Navbar.css";
+import Home from "../../home";
 const Navbar = (props) => {
   let click = 0;
   const myFunction = () => {
@@ -93,8 +94,16 @@ const Navbar = (props) => {
       </div>
       <div className="navbar-all-links">
         <div className="logo">
-          <h1>Club</h1>
-          <h4>Collaboration</h4>
+          <NavLink
+            to="/"
+            exact
+            activeClassName="current"
+            element={<Home />}
+            id="logo"
+          >
+            <h1>Club</h1>
+            <h4>Collaboration</h4>
+          </NavLink>
         </div>
         <div className="responsive-menu" id="center-link">
           <h1>Club</h1>
@@ -167,4 +176,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(Navbar);
-

@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import "./Navbar.css";
-import Home from "../../home";
+import Home from "../../Home";
 const Navbar = (props) => {
   let click = 0;
   const myFunction = () => {

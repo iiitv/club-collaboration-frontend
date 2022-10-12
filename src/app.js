@@ -2,7 +2,7 @@ import React from 'react'
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Navbar from './main-page/Navbar/MainNavbar/Navbar'
 import './index.css'
-import Home from "./main-page/home";
+import Home from "./main-page/Home";
 import Clubmainpage from './component/clubs/club-main-page/club-main-page'
 const App = ()=>{
     return(

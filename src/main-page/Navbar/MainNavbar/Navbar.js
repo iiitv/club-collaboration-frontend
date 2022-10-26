@@ -109,7 +109,7 @@ const Navbar = (props) => {
           <h1>Club</h1>
           <h4>Collaboration</h4>
           {renderMenuNavLink("/", "Home")}
-          {renderMenuNavLink("/Events", "Events")}
+          {renderMenuNavLink("/Eventss", "Events")}
           {renderMenuNavLink("/Announcement", "Announcement")}
           {renderMenuNavLink("/Login", "Login")}
           <span

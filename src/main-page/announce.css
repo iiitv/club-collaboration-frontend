@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+.contain {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans;
+  transition: ease 0.5s;
+  text-decoration: none;
+  color: #161f3e;
+}
+
+
+
+.container {
+  width: 100%;
+  max-width: 70vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-card {
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+.event-card:hover {
+  box-shadow: #cfd5e0 0 0 10px 5px;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.date-time {
+  width: 200px;
+  height: 80px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.dt1 {
+  background: #eceff8;
+}
+.dt2 {
+  background: #f8ecf8;
+}
+.dt3 {
+  background: #f8ecec;
+}
+.dt4 {
+  background: #eef8ec;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.time {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.event-detail {
+  font-size: 12px;
+  color: #4b4b4b;
+  margin-top: 5px;
+  margin: 1rem;
+}
+
+.add-to-calender {
+  width: 120px;
+  display: inline-block;
+  background: #000000;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+  border-radius: 6px;
+  margin: 0 10px;
+}
+.add-to-calender:hover {
+  box-shadow: #cfd5e0 0 0 10px 5px;
+  transform: scale(1.1);
+}
+.add-to-calender:hover ion-icon {
+  transform: rotate(360deg);
+}
+
+ion-icon {
+  color: white;
+  font-size: 17px;
+  
+}
+@media (max-width:600px){
+    .event-card {
+        flex-direction: column;
+    }
+}

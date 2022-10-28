@@ -1,0 +1,38 @@
+.containerr{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.form{
+    background-color: white;
+    height: 60vh;
+    width:34vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    border-radius: 1rem;
+   
+}
+
+.form input{
+    color:blue;
+    margin: 2rem 2rem;
+    border-radius: 1rem;
+    border: 2px solid aquamarine;
+    padding: 10px;
+}
+.form button{
+    width:10vw;
+    padding: 0.8rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    color:blue;
+    border: 2px solid aquamarine;
+
+}
+.form button:hover{
+    background-color: blue;
+    color: aquamarine;
+}

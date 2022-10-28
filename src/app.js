@@ -5,6 +5,7 @@ import './index.css'
 import Home from "./main-page/home";
 import Clubmainpage from './component/clubs/club-main-page/club-main-page'
 import Eventss from './Eventss';
+import LoginM from './LoginM';
 // import Events from './main-page/Events/Events';
 const App = ()=>{
     return(
@@ -14,6 +15,7 @@ const App = ()=>{
                <Switch>
                    <Route exact path='/' component={Home}  />
                    <Route exact path='/Eventss' component={Eventss} />
+                   <Route exact path='/LoginM' component={LoginM} />
                    {/* <Route exact path='/Events' component={Events} /> */}
                    <Route path='/club/:clubname' component={Clubmainpage} />
                </Switch>

@@ -111,7 +111,7 @@ const Navbar = (props) => {
           {renderMenuNavLink("/", "Home")}
           {renderMenuNavLink("/Eventss", "Events")}
           {renderMenuNavLink("/Announcement", "Announcement")}
-          {renderMenuNavLink("/Login", "Login")}
+          {renderMenuNavLink("/LoginM", "Login")}
           <span
             className="our-club"
             onMouseOver={onMouseOver}

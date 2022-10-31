@@ -156,7 +156,7 @@ const Navbar = (props) => {
           <ul>
             {renderSideBarNavLink("/Blogs", "Blogs")}
             {renderSideBarNavLink("/Gallery", "Gallery")}
-            {renderSideBarNavLink("/Contact", "Contact")}
+            {renderSideBarNavLink("/ContactUs", "Contact")}
             {renderSideBarNavLink("/Posts", "Posts")}
             {renderSideBarNavLink("/News", "News")}
             {renderSideBarNavLink("/Members", "Members")}

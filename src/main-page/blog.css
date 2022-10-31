@@ -33,7 +33,7 @@
 }
 
 .bsquare img{
-  width: 460px;
+  width: 50rem;
   }
 
 .h1{
@@ -70,4 +70,29 @@ p{
     font-size: 12px;
     cursor: pointer;
     font-family: 'merriweather';
+}
+
+@media (max-width:553px){
+    .mask{
+        clip: rect(0px, 24.4rem, 220px, 0px);
+        border-radius: 4px;
+        position: absolute;
+      }
+      
+}
+@media (max-width:414px){
+    .mask{
+        clip: rect(0px, 16rem, 220px, 0px);
+        border-radius: 4px;
+        position: absolute;
+      }
+      
+}
+@media (max-width:375px){
+    .mask{
+        clip: rect(0px, 14rem, 220px, 0px);
+        border-radius: 4px;
+        position: absolute;
+      }
+      
 }

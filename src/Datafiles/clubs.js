@@ -8,7 +8,9 @@ const clubsdata = {
         {id:6,image:'Images/clublogo/arcadia.jpg',club:'Arcadia',sirname:'',sec:'Sahil Kumar Rai',jsec:'Shubham Mehatre'},
         {id:7,image:'Images/clublogo/obscura.jpeg',club:'Obscura',sirname:'',sec:'Chetan Verma',jsec:'Nishant Dev'},
         {id:8,image:'Images/clublogo/literature.jpeg',club:'Literature',sirname:'Club',sec:'Tejas Joshi',jsec:'Dhruv Sharma'},
-        {id:9,image:'Images/clublogo/dot.jpeg',club:'Dot',sirname:'Club',sec:'Suyash Jain',jsec:'Sanidhya Kumar '}
+        {id:9,image:'Images/clublogo/dot.jpeg',club:'Dot',sirname:'Club',sec:'Suyash Jain',jsec:'Sanidhya Kumar '},
+        {id:10,image:'Images/clublogo/finance.jpeg',club:'Finance and Consulting ',sirname:'Club',sec:'Vansh Goel',jsec:'Snehal Nalawade'},
+        {id:11,image:'Images/clublogo/iot.jpg',club:'IoT',sirname:'Club',sec:'ABC',jsec:'DEF'},
 
     ]
 }

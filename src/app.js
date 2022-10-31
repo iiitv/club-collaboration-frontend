@@ -8,6 +8,7 @@ import Eventss from './Eventss';
 import LoginM from './LoginM';
 import { Announcement } from './Announcement';
 import ContactUs from './ContactUs';
+import { Blogs } from './Blogs';
 // import Events from './main-page/Events/Events';
 const App = ()=>{
     return(
@@ -20,6 +21,7 @@ const App = ()=>{
                    <Route exact path='/LoginM' component={LoginM} />
                    <Route exact path='/Announcement' component={Announcement} />
                    <Route exact path='/ContactUs' component={ContactUs} />
+                   <Route exact path='/Blogs' component={Blogs} />
                    {/* <Route exact path='/Events' component={Events} /> */}
                    <Route path='/club/:clubname' component={Clubmainpage} />
                </Switch>

@@ -1,19 +1,18 @@
-.containerr{
+.container{
     display:flex;
     justify-content: center;
-    
 }
 
 .form{
     background-color: white;
-    height: 60vh;
+    height: fit-content;
     width:34vw;
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem;
+    padding: 1rem 4rem;
     border-radius: 1rem;
-   
+    margin-left: 15vw;
 }
 
 .form input{
@@ -21,12 +20,12 @@
     margin: 2rem 2rem;
     border-radius: 1rem;
     border: 2px solid aquamarine;
-    padding: 10px;
+    padding: 5px 10px;
 }
 .form button{
     width:10vw;
     padding: 0.8rem;
-    margin: 1rem;
+    margin: 0.5rem 1rem;
     border-radius: 1rem;
     color:blue;
     border: 2px solid aquamarine;

@@ -9,6 +9,7 @@ import LoginM from './LoginM';
 import { Announcement } from './Announcement';
 import ContactUs from './ContactUs';
 import { Blogs } from './Blogs';
+import { Signup} from  './main-page/Signup'
 // import Events from './main-page/Events/Events';
 const App = ()=>{
     return(
@@ -17,11 +18,12 @@ const App = ()=>{
                <Navbar />
                <Switch>
                    <Route exact path='/' component={Home}  />
-                   <Route exact path='/Eventss' component={Eventss} />
-                   <Route exact path='/LoginM' component={LoginM} />
+                   <Route exact path='/Events' component={Eventss} />
+                   <Route exact path='/Login' component={LoginM} />
                    <Route exact path='/Announcement' component={Announcement} />
                    <Route exact path='/ContactUs' component={ContactUs} />
                    <Route exact path='/Blogs' component={Blogs} />
+                    <Route exact path='/signUp' component={Signup} />
                    {/* <Route exact path='/Events' component={Events} /> */}
                    <Route path='/club/:clubname' component={Clubmainpage} />
                </Switch>
